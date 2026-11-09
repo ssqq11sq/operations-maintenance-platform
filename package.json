@@ -1,0 +1,26 @@
+{
+  "name": "operations-maintenance-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "运维管理系统 MVP - NestJS + React + uniapp",
+  "scripts": {
+    "dev": "concurrently -n api,web,mobile -c blue,green,magenta \"pnpm dev:api\" \"pnpm dev:web\" \"pnpm dev:mobile\"",
+    "dev:api": "pnpm --filter @omp/api start:dev",
+    "dev:web": "pnpm --filter @omp/web dev",
+    "dev:mobile": "pnpm --filter @omp/mobile dev:h5",
+    "dev:mp-weixin": "pnpm --filter @omp/mobile dev:mp-weixin",
+    "build:api": "pnpm --filter @omp/api build",
+    "build:web": "pnpm --filter @omp/web build",
+    "build:mobile": "pnpm --filter @omp/mobile build:h5",
+    "build:shared": "pnpm --filter @omp/shared build",
+    "seed": "pnpm --filter @omp/api seed"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@11.4.0",
+  "devDependencies": {
+    "concurrently": "^10.0.4"
+  }
+}

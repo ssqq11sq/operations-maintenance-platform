@@ -1,0 +1,9 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+allowBuilds:
+  esbuild: true
+  "@parcel/watcher": true
+  core-js: true
+  sqlite3: false

@@ -1,0 +1,47 @@
+{
+  "name": "运维移动端",
+  "appid": "__UNI__OMPMVP",
+  "description": "运维管理系统移动端 MVP",
+  "versionName": "0.1.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "h5": {
+    "title": "运维移动端",
+    "router": {
+      "mode": "hash"
+    },
+    "devServer": {
+      "port": 5174
+    }
+  },
+  "mp-weixin": {
+    "appid": "wx49a991e9f79318ad",
+    "setting": {
+      "urlCheck": false
+    },
+    "permission": {
+      "scope.userLocation": {
+        "desc": "用于打卡水印显示现场位置"
+      }
+    },
+    "requiredPrivateInfos": ["getLocation", "chooseLocation"],
+    "sdkConfigs": {
+      "maps": {
+        "amap": true
+      }
+    }
+  },
+  "app-plus": {
+    "distribute": {
+      "sdkConfigs": {
+        "maps": {
+          "amap": {
+            "name": "amap",
+            "appkey_ios": "",
+            "appkey_android": ""
+          }
+        }
+      }
+    }
+  }
+}

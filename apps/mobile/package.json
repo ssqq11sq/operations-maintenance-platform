@@ -1,0 +1,35 @@
+{
+  "name": "@omp/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:h5": "uni -p h5",
+    "build:h5": "uni build -p h5",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:mp-weixin": "uni build -p mp-weixin"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-4070520250711001",
+    "@dcloudio/uni-app-plus": "3.0.0-4070520250711001",
+    "@dcloudio/uni-components": "3.0.0-4070520250711001",
+    "@dcloudio/uni-h5": "3.0.0-4070520250711001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-4070520250711001",
+    "@omp/shared": "workspace:*",
+    "leaflet": "^1.9.4",
+    "vue": "^3.5.13",
+    "vue-i18n": "^9.14.4"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.14",
+    "@dcloudio/uni-automator": "3.0.0-4070520250711001",
+    "@dcloudio/uni-cli-shared": "3.0.0-4070520250711001",
+    "@dcloudio/uni-stacktracey": "3.0.0-4070520250711001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-4070520250711001",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vue/runtime-core": "^3.5.13",
+    "sass": "^1.85.1",
+    "typescript": "^5.8.2",
+    "vite": "^5.2.8",
+    "vue-tsc": "^2.2.8"
+  }
+}

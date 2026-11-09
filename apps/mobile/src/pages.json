@@ -1,0 +1,82 @@
+{
+  "pages": [
+    {
+      "path": "pages/feed/index",
+      "style": { "navigationBarTitleText": "工作圈" }
+    },
+    {
+      "path": "pages/login/index",
+      "style": { "navigationBarTitleText": "登录", "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/punch/index",
+      "style": { "navigationBarTitleText": "打卡拍照" }
+    },
+    {
+      "path": "pages/workorders/index",
+      "style": { "navigationBarTitleText": "工单" }
+    },
+    {
+      "path": "pages/workorders/create",
+      "style": { "navigationBarTitleText": "填写工单" }
+    },
+    {
+      "path": "pages/workorders/detail",
+      "style": { "navigationBarTitleText": "工单详情" }
+    },
+    {
+      "path": "pages/overtime/index",
+      "style": { "navigationBarTitleText": "加班" }
+    },
+    {
+      "path": "pages/overtime/create",
+      "style": { "navigationBarTitleText": "提交加班申请" }
+    },
+    {
+      "path": "pages/overtime/detail",
+      "style": { "navigationBarTitleText": "加班详情" }
+    },
+    {
+      "path": "pages/team/index",
+      "style": { "navigationBarTitleText": "我的团队" }
+    },
+    {
+      "path": "pages/route/index",
+      "style": { "navigationBarTitleText": "巡检路线" }
+    }
+  ],
+  "tabBar": {
+    "color": "#6b7c74",
+    "selectedColor": "#0f6e56",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/feed/index",
+        "text": "工作圈"
+      },
+      {
+        "pagePath": "pages/punch/index",
+        "text": "打卡"
+      },
+      {
+        "pagePath": "pages/workorders/index",
+        "text": "工单"
+      },
+      {
+        "pagePath": "pages/overtime/index",
+        "text": "加班"
+      },
+      {
+        "pagePath": "pages/team/index",
+        "text": "团队"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "运维移动端",
+    "navigationBarBackgroundColor": "#f7faf8",
+    "backgroundColor": "#f2f5f3"
+  }
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+:root {
+  --bg: #f3f6f4;
+  --ink: #14231d;
+  --muted: #51665c;
+  --subtle: #7a8a83;
+  --accent: #0f6e56;
+  --accent-soft: #e8f4ef;
+  --border: #dde7e2;
+  --panel: rgba(255, 255, 255, 0.92);
+  --card-radius: 16px;
+  --status-pending: #d97706;
+  --status-progress: #2563eb;
+  --status-done: #0f6e56;
+  --status-closed: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #c9ebe0 0%, transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, #dce8f5 0%, transparent 50%),
+    var(--bg);
+  font-family: 'IBM Plex Sans', 'Noto Sans SC', system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.page-header h4,
+.page-header .ant-typography {
+  margin: 0 !important;
+}
+
+.page-header .page-desc {
+  color: var(--subtle);
+  font-size: 13px;
+  margin-top: 4px;
+  display: block;
+}
+
+.stat-card {
+  border-radius: var(--card-radius) !important;
+  border: 1px solid var(--border) !important;
+  overflow: hidden;
+}
+
+.stat-card--accent {
+  border-top: 3px solid var(--accent) !important;
+}
+
+.stat-card--blue {
+  border-top: 3px solid var(--status-progress) !important;
+}
+
+.stat-card--amber {
+  border-top: 3px solid var(--status-pending) !important;
+}
+
+.panel-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+}
+
+.ant-layout-sider .ant-menu-item-selected {
+  background: var(--accent-soft) !important;
+}
+
+.ant-btn-primary {
+  box-shadow: none;
+}
